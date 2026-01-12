@@ -2,6 +2,9 @@
 
 A simple command-line tool to search and view real-time cryptocurrency data from the [CoinLore API](https://www.coinlore.com/).
 
+<img src="preview.png" alt="CoinLore CLI Preview"/>
+
+
 ---
 
 ## Features
