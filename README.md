@@ -25,6 +25,6 @@ A simple command-line tool to search and view real-time cryptocurrency data from
 
 ```bash
 git clone https://github.com/ssnofall/coin-lore-cli.git
-cd coin-lore
+cd coin-lore-cli
 bundle install
-ruby core.rb
+ruby coinlore.rb

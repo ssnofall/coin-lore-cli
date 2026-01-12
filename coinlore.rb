@@ -6,7 +6,7 @@ require "tty-prompt"
 prompt = TTY::Prompt.new
 author = "Snofall"
 
-puts "Coin Lore CLI by #{author}"
+puts "Welcome to Coin Lore CLI by #{author}"
 
 # Step 1: Fetch top coins once to build search index
 puts "Fetching Top 100 Crypto-Currencies..."
@@ -15,7 +15,7 @@ searcher = CoinSearch.new(coins)
 
 # Step 2: Interactive loop for user input
 loop do
-  input = prompt.ask("Enter a currency name or ticker symbol:")
+  input = prompt.ask("Enter a currency name or ticker symbol(or 'exit' to quit):")
   break if input.nil? || input.downcase == "exit"
 
   coin_info = searcher.find_coin(input)
