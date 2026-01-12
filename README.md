@@ -28,3 +28,13 @@ git clone https://github.com/ssnofall/coin-lore-cli.git
 cd coin-lore-cli
 bundle install
 ruby coinlore.rb
+```
+
+---
+
+## Disclaimer
+
+> **Disclaimer:** This project is not affiliated with [CoinLore](https://www.coinlore.com/).  
+> It is an independent tool that uses their public API to display cryptocurrency data in the command line.
+
+
