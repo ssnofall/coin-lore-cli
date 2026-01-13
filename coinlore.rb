@@ -7,16 +7,16 @@ require "colorize"
 prompt = TTY::Prompt.new
 author = "Snofall"
 
-puts "Welcome to Coin Lore CLI by #{author}"
+puts "Welcome to Coin Lore CLI by #{author}".cyan.bold
 
 # Step 1: Fetch top coins once to build search index
-puts "Fetching Top 100 Crypto-Currencies..."
+puts "Fetching Top 100 Crypto-Currencies...".light_blue.bold
 coins = ApiClient.fetch_top_coins
 searcher = CoinSearch.new(coins)
 
 # Step 2: Interactive loop for user input
 loop do
-  input = prompt.ask("Enter a currency name or ticker symbol(or 'exit' to quit):")
+  input = prompt.ask("Enter a currency name or ticker symbol(or 'exit' to quit):".white.bold)
   break if input.nil? || input.downcase == "exit"
 
   coin_info = searcher.find_coin(input)
@@ -25,8 +25,8 @@ loop do
     full_coin = ApiClient.fetch_coin_by_id(coin_info["id"])
     Display.show_coin(full_coin)
   else
-    puts "Currency not found. Try again!"
+    puts "Currency not found. Try again!".red.bold
   end
 end
 
-puts "goodbye!"
+puts "goodbye!".light_green.bold
