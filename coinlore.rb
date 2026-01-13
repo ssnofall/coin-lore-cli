@@ -29,4 +29,4 @@ loop do
   end
 end
 
-puts "goodbye!".light_green.bold
+puts "goodbye!".light_green
