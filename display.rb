@@ -4,7 +4,7 @@ class Display
 
     puts "-" * 50
     puts "#{coin['name']} (#{coin['symbol']})"
-    puts "Price USD: $#{coin['price_usd']}"
+    puts "Price USD: $#{coin['price_usd']}".green
     puts "Change 1h: #{coin['percent_change_1h']}%"
     puts "Change 24h: #{coin['percent_change_24h']}%"
     puts "Change 7d: #{coin['percent_change_7d']}%"

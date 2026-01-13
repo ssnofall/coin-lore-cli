@@ -2,6 +2,7 @@ require_relative "api"
 require_relative "search"
 require_relative "display"
 require "tty-prompt"
+require "colorize"
 
 prompt = TTY::Prompt.new
 author = "Snofall"
